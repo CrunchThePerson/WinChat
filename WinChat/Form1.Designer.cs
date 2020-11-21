@@ -46,7 +46,7 @@
             // RecieveTick
             // 
             this.RecieveTick.Enabled = true;
-            this.RecieveTick.Interval = 1;
+            this.RecieveTick.Interval = 16;
             this.RecieveTick.Tick += new System.EventHandler(this.RecieveTick_Tick);
             // 
             // ResetTimer
@@ -57,29 +57,32 @@
             // textBox1
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(727, 30);
+            this.textBox1.Location = new System.Drawing.Point(970, 37);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.tableLayoutPanel1.SetRowSpan(this.textBox1, 2);
-            this.textBox1.Size = new System.Drawing.Size(123, 417);
+            this.textBox1.Size = new System.Drawing.Size(163, 513);
             this.textBox1.TabIndex = 3;
             // 
             // InputBox
             // 
             this.InputBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.InputBox.Location = new System.Drawing.Point(3, 410);
+            this.InputBox.Location = new System.Drawing.Point(4, 505);
+            this.InputBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.InputBox.Multiline = true;
             this.InputBox.Name = "InputBox";
-            this.InputBox.Size = new System.Drawing.Size(612, 37);
+            this.InputBox.Size = new System.Drawing.Size(816, 45);
             this.InputBox.TabIndex = 1;
             // 
             // SendButton
             // 
             this.SendButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SendButton.Location = new System.Drawing.Point(621, 410);
+            this.SendButton.Location = new System.Drawing.Point(828, 505);
+            this.SendButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SendButton.Name = "SendButton";
-            this.SendButton.Size = new System.Drawing.Size(100, 37);
+            this.SendButton.Size = new System.Drawing.Size(134, 45);
             this.SendButton.TabIndex = 0;
             this.SendButton.Text = "Send";
             this.SendButton.UseVisualStyleBackColor = true;
@@ -98,24 +101,26 @@
             this.tableLayoutPanel1.Controls.Add(this.ChatChoice, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(853, 450);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1137, 554);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // ChatBox
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.ChatBox, 2);
             this.ChatBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ChatBox.Location = new System.Drawing.Point(3, 30);
+            this.ChatBox.Location = new System.Drawing.Point(4, 37);
+            this.ChatBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ChatBox.Multiline = true;
             this.ChatBox.Name = "ChatBox";
             this.ChatBox.ReadOnly = true;
-            this.ChatBox.Size = new System.Drawing.Size(718, 374);
+            this.ChatBox.Size = new System.Drawing.Size(958, 460);
             this.ChatBox.TabIndex = 4;
             // 
             // ChatChoice
@@ -124,38 +129,42 @@
             this.ChatChoice.Controls.Add(this.tabPage1);
             this.ChatChoice.Controls.Add(this.tabPage2);
             this.ChatChoice.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ChatChoice.Location = new System.Drawing.Point(3, 3);
+            this.ChatChoice.Location = new System.Drawing.Point(4, 4);
+            this.ChatChoice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ChatChoice.Name = "ChatChoice";
             this.ChatChoice.SelectedIndex = 0;
-            this.ChatChoice.Size = new System.Drawing.Size(847, 21);
+            this.ChatChoice.Size = new System.Drawing.Size(1129, 25);
             this.ChatChoice.TabIndex = 5;
             // 
             // tabPage1
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(839, 0);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Size = new System.Drawing.Size(1121, 0);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Chat";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(839, 0);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Size = new System.Drawing.Size(1121, 0);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Other";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // Chat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(853, 450);
+            this.ClientSize = new System.Drawing.Size(1137, 554);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Chat";
             this.Text = "Chat";
             this.tableLayoutPanel1.ResumeLayout(false);

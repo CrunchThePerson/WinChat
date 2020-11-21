@@ -29,7 +29,7 @@ namespace WinChat
                 {
                     using (StreamWriter sw = File.AppendText(Usernames))
                     {
-                        sw.WriteLine(EnterUser.Text);
+                        sw.WriteLine("/" + EnterUser.Text);
                         sw.Close();
                     }
                 }
@@ -42,7 +42,7 @@ namespace WinChat
                     }
                     using (StreamWriter sw = File.CreateText(Pass))
                     {
-                        sw.WriteLine(EnterUser.Text + "/" + EnterPass.Text);
+                        sw.WriteLine("/" + EnterUser.Text + "/" + EnterPass.Text);
                         sw.Close();
                     }
                 }
@@ -69,8 +69,8 @@ namespace WinChat
                 {
                     return;
                 }
-                if (user.Contains(Username.Text + Environment.NewLine))
-                {
+                //if (user.Contains(/*"/" + */ Username.Text + Environment.NewLine))
+                //{
                     string pass = "";
                     if (File.Exists(Pass))
                     {
@@ -82,10 +82,8 @@ namespace WinChat
                             }
                             sr.Close();
                         }
-                        if (pass.Contains(Username.Text + "/" + Password.Text + Environment.NewLine))
+                        if (pass.Contains("/" + Username.Text + "/" + Password.Text + Environment.NewLine))
                         {
-
-
                             using (StreamReader sr = File.OpenText(Pass))
                             {
                                 sr.BaseStream.Position = 0;
@@ -123,4 +121,4 @@ namespace WinChat
             }
         }
     }
-}
+//}
